@@ -1,103 +1,74 @@
-# REPO_NAME
+# BlackRoad Scripts
 
-**Part of the BlackRoad ecosystem** 🖤
+**612 shell scripts. 87 Python scripts. One sovereign fleet.**
 
-> Professional, enterprise-grade software from BlackRoad OS, Inc.
+Automation suite for the entire BlackRoad OS ecosystem — deployment, infrastructure management, AI operations, quantum experiments, monitoring, and fleet orchestration across 5 Raspberry Pi 5 nodes.
 
-## 🚀 Overview
+## At a Glance
 
-REPO_NAME is a proprietary product by BlackRoad OS, Inc. This repository contains 
-commercial software protected by intellectual property rights.
+| Category | Count | Description |
+|----------|-------|-------------|
+| `deploy-*` | 67 | Cloudflare, Pi fleet, service deployment |
+| `blackroad-*` | 71 | Core platform operations |
+| `memory-*` | 34 | Lucidia memory system management |
+| `setup-*` | 21 | Environment and service setup |
+| `test-*` | 22 | Integration and smoke tests |
+| `br-*` | 22 | BlackRoad CLI shortcuts |
+| `claude-*` | 12 | Claude AI integration scripts |
+| `quantum-*` | 7 | Quantum simulation runners |
+| `cloudflare-*` | 5 | DNS, Workers, Pages management |
+| Python scripts | 87 | AI agents, consciousness models, generators |
 
-## 📋 License
+## Infrastructure
 
-This software is proprietary and confidential. Unauthorized copying, distribution, 
-modification, or use is strictly prohibited. See [LICENSE](./LICENSE) for details.
+These scripts manage:
 
-**Copyright © 2026 BlackRoad OS, Inc. All Rights Reserved.**
+- **5 Raspberry Pi 5 nodes** — Alice (.49), Cecilia (.96), Octavia (.97), Aria (.98), Lucidia (.38)
+- **WireGuard mesh** — 10.8.0.x inter-node routing
+- **2 Hailo-8 AI accelerators** — 52 TOPS total
+- **108 Ollama models** — deployment and management
+- **48+ custom domains** — DNS and Cloudflare routing
+- **18 Cloudflare tunnels** — edge routing
+- **Docker Swarm** — container orchestration
 
-## 🔒 Access & Usage
+## Key Scripts
 
-### For BlackRoad Team Members
-- Clone with proper authentication
-- Follow internal development guidelines
-- Maintain confidentiality of source code
-
-### For Enterprise Customers
-- Contact sales@blackroad.io for licensing
-- Enterprise support: enterprise@blackroad.io
-- Documentation: https://docs.blackroad.io
-
-### For Partners
-- Partnership inquiries: partners@blackroad.io
-- OEM licensing available
-- Custom deployment options
-
-## 📚 Documentation
-
-- **Full Documentation:** [docs.blackroad.io](https://docs.blackroad.io)
-- **API Reference:** [api.blackroad.io](https://api.blackroad.io)
-- **Support Portal:** [support.blackroad.io](https://support.blackroad.io)
-
-## 🛠️ Development
-
-### Prerequisites
+### Deployment
 ```bash
-# Install dependencies
-npm install  # or yarn/pnpm
+./deploy-all-services.sh        # Deploy everything
+./deploy-to-cloudflare.sh       # Push to Cloudflare Pages
+./DEPLOY_BLACKROAD_ON_ALICE.sh  # Deploy to Alice Pi
+./MEGA-DEPLOY.sh                # Full fleet deployment
 ```
 
-### Setup
+### Infrastructure
 ```bash
-# Copy environment template
-cp .env.example .env
-
-# Start development server
-npm run dev
+./setup-wireguard.sh            # Configure WireGuard mesh
+./add-all-devices-to-network.sh # Network device provisioning
+./QUICK_SSH.sh                  # Fast SSH to any Pi
 ```
 
-### Testing
+### AI / Memory
 ```bash
-npm test
-npm run lint
-npm run type-check
+./memory-*.sh                   # 34 memory management scripts
+./claude-*.sh                   # Claude AI integration
+./CONSCIOUSNESS_MASTER_CONTROL.py # AI consciousness framework
 ```
 
-## 🔐 Security
+## Usage
 
-- Security vulnerabilities: security@blackroad.io
-- Do NOT create public issues for security concerns
-- See [SECURITY.md](./SECURITY.md) for full policy
+```bash
+git clone https://github.com/blackboxprogramming/blackroad-scripts.git
+cd blackroad-scripts
+chmod +x script-name.sh
+./script-name.sh
+```
 
-## 💼 Commercial Licensing
+## Related
 
-Interested in licensing this software? We offer:
-- ✅ **Enterprise Licenses** - Full-featured deployment
-- ✅ **OEM Licensing** - White-label solutions
-- ✅ **SaaS Licensing** - Cloud-hosted options
-- ✅ **Custom Solutions** - Tailored to your needs
+- [BlackRoad-Operating-System](https://github.com/blackboxprogramming/BlackRoad-Operating-System) — Master monorepo
+- [aria-infrastructure-queen](https://github.com/blackboxprogramming/aria-infrastructure-queen) — Aria's infrastructure automation
 
-**Contact:** sales@blackroad.io
+## License
 
-## 🌐 About BlackRoad
-
-BlackRoad OS, Inc. is building the future of distributed computing, AI infrastructure, 
-and next-generation software platforms.
-
-- 🌍 **Website:** [blackroad.io](https://blackroad.io)
-- 💬 **Discord:** [discord.gg/blackroad](https://discord.gg/blackroad)
-- 🐦 **Twitter:** [@blackroad_os](https://twitter.com/blackroad_os)
-- 📧 **Email:** hello@blackroad.io
-
-## 📞 Contact
-
-- **Sales:** sales@blackroad.io
-- **Support:** support@blackroad.io
-- **Security:** security@blackroad.io
-- **General:** hello@blackroad.io
-
----
-
-**BlackRoad OS, Inc. © 2026** | Built with 🖤 in San Francisco
-
-*This is proprietary software. All rights reserved.*
+Copyright 2026 BlackRoad OS, Inc. — Alexa Amundson. All rights reserved.
