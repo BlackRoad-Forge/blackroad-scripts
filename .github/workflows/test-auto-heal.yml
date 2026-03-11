@@ -1,11 +1,6 @@
 name: 🧪 Test Auto-Heal on Failure
 
 on:
-  workflow_run:
-    workflows: ["*"]
-    types: [completed]
-  push:
-    branches: [main, master, develop]
   workflow_dispatch:
 
 permissions:

@@ -1,12 +1,7 @@
 name: 🔧 Self-Healing
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'  # Every 30 minutes
   workflow_dispatch:
-  workflow_run:
-    workflows: ["🚀 Auto Deploy"]
-    types: [completed]
 
 jobs:
   monitor:

@@ -1,11 +1,6 @@
 name: 🤖 Self-Healing Master
 
 on:
-  workflow_run:
-    workflows: ["*"]
-    types: [completed]
-  schedule:
-    - cron: '*/10 * * * *'  # Every 10 minutes
   workflow_dispatch:
     inputs:
       force_heal:
