@@ -1,5 +1,12 @@
 # BlackRoad Scripts
 
+[![Shell](https://img.shields.io/badge/Shell-400%2B_scripts-4EAA25.svg)](https://gnu.org/software/bash/)
+[![Pi Fleet](https://img.shields.io/badge/fleet-5_nodes-FF2255.svg)](https://blackroad.io)
+[![WireGuard](https://img.shields.io/badge/WireGuard-mesh-88171A.svg)](https://wireguard.com)
+[![Docker](https://img.shields.io/badge/Docker-Swarm-2496ED.svg)](https://docker.com)
+
+
+
 **612 shell scripts. 87 Python scripts. One sovereign fleet.**
 
 Automation suite for the entire BlackRoad OS ecosystem — deployment, infrastructure management, AI operations, quantum experiments, monitoring, and fleet orchestration across 5 Raspberry Pi 5 nodes.
